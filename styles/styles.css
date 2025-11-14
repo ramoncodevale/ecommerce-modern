@@ -17,6 +17,21 @@
   --black: #000000;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  overflow-x: hidden;
+}
+
+
+
 .container {
   margin: 0 auto;
   width: 95%;
@@ -137,4 +152,68 @@ nav {
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
+}
+
+.best-picks {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.container-best-picks h1 {
+  font-size: 70px;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 40px;
+}
+
+
+.container-text-card h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-primary);
+  margin-top: 20px;
+}
+
+.container-text-card p {
+  color: var(--color-gray-2);
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.container-stars-numbers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.container-price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.container-price .price-black {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.container-price .price-gray {
+  color: var(--color-gray-2);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.container-price .price-red {
+  color: var(--red);
+  font-weight: 400;
+  font-size: 14px;
 }
