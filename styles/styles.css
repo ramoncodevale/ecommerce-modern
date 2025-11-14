@@ -14,6 +14,7 @@
   --border-input: #C5C5C5;
   --red: #E32005;
   --white: #FFFFFF;
+  --black: #000000;
 }
 
 .container {
@@ -78,4 +79,62 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.container-free {
+  width: 100%;
+  height: 34px;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.container-free p {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.hero {
+  background-image: url('../assets/young-friends-sitting-curb-city.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 580px;
+}
+
+.container-title-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 347px;
+}
+
+.container-title-hero p {
+  font-weight: 400;
+  font-size: 19px;
+  color: var(--white);
+}
+
+.container-title-hero h1 {
+  width: 171px;
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+}
+
+.container-title-hero button {
+  width: 171px;
+  height: 41px;
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
 }
