@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Judson", serif;
+}
+
+:root {
+  --color-primary: #222222;
+  --color-gray-1: #202020;
+  --color-gray-2: #5F5F5F;
+  --border-input: #C5C5C5;
+  --red: #E32005;
+  --white: #FFFFFF;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+header {
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo p {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.container-input-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 21px;
+}
+
+.container-search-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.container-search-input input {
+  width: 441px;
+  height: 40px;
+  border: 1px solid var(--border-input);
+  padding-left: 44px;
+}
+
+.container-search-input img {
+  position: absolute;
+  left: 16px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
