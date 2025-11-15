@@ -234,7 +234,55 @@ nav {
   font-weight: 400;
 }
 
+.design {
+  padding-top: 100px;
+}
+
+.container-design {
+  background-image: url('../assets/design.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+}
+
+.container-design-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding-top: 113px;
+}
+
+.container-design-text p {
+  font-size: 28px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.container-design-text h3 {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-design-text button {
+  width: 265px;
+  height: 41px;
+  background-color: var(--white);
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+}
+
 @media (max-width: 768px) {
+  .container-best-picks h1{
+   text-align: center;
+  }
+
   .container-search-input {
     display: none;
   }
