@@ -278,9 +278,50 @@ nav {
   border: none;
 }
 
+.shop-items {
+  padding-top: 100px;
+}
+
+.shop-items h1 {
+  color: var(--color-primary);
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.container-imgs-shop-items {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.imgs-shop-items {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0) 58%, rgba(0, 0, 0, 1) 100%),
+    url('../assets/t-shrit-mens-womens.png');
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 360px;
+  height: 425px;
+
+  display: flex;
+  align-items: flex-end;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+
+.imgs-shop-items p {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--white);
+}
+
 @media (max-width: 768px) {
-  .container-best-picks h1{
-   text-align: center;
+  .container-best-picks h1 {
+    text-align: center;
   }
 
   .container-search-input {
@@ -292,5 +333,14 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 32px;
+  }
+
+  .container-imgs-shop-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-items h1 {
+    text-align: center;
   }
 }
