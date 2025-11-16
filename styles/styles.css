@@ -295,17 +295,15 @@ nav {
 }
 
 .imgs-shop-items {
-  background-image:
-    linear-gradient(to right, rgba(0, 0, 0, 0) 58%, rgba(0, 0, 0, 1) 100%),
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
     url('../assets/t-shrit-mens-womens.png');
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   width: 360px;
   height: 425px;
-
   display: flex;
   align-items: flex-end;
   padding-left: 40px;
@@ -317,6 +315,55 @@ nav {
   font-weight: 700;
   font-size: 40px;
   color: var(--white);
+}
+
+.summer {
+  padding-top: 100px;
+}
+
+.container-summer {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%),
+    url('../assets/summer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 614px;
+  background-color: #D9D9D9;
+}
+
+.container-summer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-top: 151px;
+}
+
+.container-summer-text p {
+  font-size: 40px;
+  color: var(--white);
+  font-weight: 400;
+}
+
+.container-summer-text h3 {
+  color: var(--white);
+  font-size: 64px;
+  font-weight: 700;
+}
+
+
+.container-summer-text button {
+  width: 171px;
+  height: 41px;
+  background-color: var(--white);
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
