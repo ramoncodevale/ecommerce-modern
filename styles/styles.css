@@ -366,6 +366,168 @@ nav {
   cursor: pointer;
 }
 
+.summer-collections {
+  padding-top: 100px;
+}
+
+.summer-collections h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+
+.container-summer-collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+/* POSIÇÕES DO MOSAICO */
+.men-summer-collection {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.women-sport-collection {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.women-new-sport-collection {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.women-flexible-collection {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.men-casual-collection {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.men-summer-collection,
+.women-sport-collection,
+.women-new-sport-collection,
+.women-flexible-collection,
+.men-casual-collection {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 333px;
+}
+
+.women-new-sport-collection {
+  height: 688px;
+}
+
+
+.men-summer-collection {
+  background-image: url('../assets/men-summer.png');
+}
+
+.women-sport-collection {
+  background-image: url('../assets/women-sport.png');
+}
+
+.women-new-sport-collection {
+  background-image: url('../assets/women-new-sport.png');
+}
+
+.women-flexible-collection {
+  background-image: url('../assets/women-flexible.png');
+}
+
+.men-casual-collection {
+  background-image: url('../assets/men-casual.png');
+}
+
+.container-text-collection,
+.container-text-new-collection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+}
+
+.container-text-collection {
+  padding-top: 263px;
+}
+
+.container-text-new-collection {
+  padding-top: 620px;
+}
+
+.container-text-collection p,
+.container-text-new-collection p {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.border {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================ */
+/* RESPONSIVIDADE               */
+/* ============================ */
+
+/* TABLET — 2 colunas */
+@media (max-width: 1100px) {
+  .container-summer-collections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .women-new-sport-collection {
+    grid-row: auto;
+    height: 500px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container-summer-collections {
+    grid-template-columns: 1fr;
+  }
+
+  .men-summer-collection,
+  .women-sport-collection,
+  .women-new-sport-collection,
+  .women-flexible-collection,
+  .men-casual-collection {
+    grid-column: auto;
+    grid-row: auto;
+    height: 350px;
+  }
+
+  .women-new-sport-collection {
+    height: 400px;
+  }
+
+  .container-text-collection {
+    padding-top: 250px;
+  }
+
+  .container-text-new-collection {
+    padding-top: 330px;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .container-best-picks h1 {
     text-align: center;
@@ -389,5 +551,10 @@ nav {
 
   .shop-items h1 {
     text-align: center;
+  }
+
+  .container-summer-collections {
+    display: flex;
+    flex-direction: column;
   }
 }
